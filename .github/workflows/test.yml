@@ -1,15 +1,16 @@
 name: test
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    types:
-      - opened
-      - synchronize
-      - reopened
-  schedule:
-    - cron: "00 15 * * *"
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - main
+#   pull_request:
+#     types:
+#       - opened
+#       - synchronize
+#       - reopened
+#   schedule:
+#     - cron: "00 15 * * *"
 jobs:
   test:
     runs-on: ubuntu-latest
